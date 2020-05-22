@@ -26,6 +26,21 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+ 
+ 
+
+<distributionManagement>
+<repository>
+<id>nexus</id>
+<name>maven-releases</name>
+<url>http://localhost:8081/repository/maven-releases/</url>
+</repository>
+<snapshotRepository>
+<id>nexus</id>
+<name>maven-snapshots</name>
+<url>http://localhost:8081/repository/maven-snapshots/</url>
+</snapshotRepository>
+</distributionManagement>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
